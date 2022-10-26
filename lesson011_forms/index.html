@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формы</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <p>Наша Форма&gt;</p>
+      <form action="send.html" method="GET" name="meForm" novalidate>
+        <label>
+          <p>Введите Ваше имя (например Дима)😈</p>
+          <input
+            type="text"
+            pattern="[a-zA-Z0-9]+"
+            required
+            maxlength="15"
+            size="40"
+            name="meForm_name"
+            placeholder="Введите Ваше имя (например Дима)"
+          />
+        </label>
+        <label for="meForm_mail1">
+          <p>Укажите Вашу электронную почту😈</p>
+        </label>
+        <!-- ======== что-то тут мешает ================= -->
+        <input
+          id="meForm_mail1"
+          type="email"
+          required
+          name="meForm_mail"
+          placeholder="Укажите Вашу электронную почту"
+        />
+        <input class="btn" type="submit" value="Передать email ✉" />
+        <!-- <input type="reset" />
+        <input type="image" src="img/button.png" />
+        <input type="button" value="Кнопка для JS" /> -->
+        <p>Курите?</p>
+        <label>Да - <input type="radio" value="1" name="meForm_smog" /></label>
+        <label
+          >Нет - <input type="radio" value="2" name="meForm_smog" checked
+        /></label>
+        <label>
+          Иногда -
+          <input type="radio" value="3" name="meForm_smog" />
+        </label>
+        <p>Какие газеты Вы читаете</p>
+        <label
+          >Аргументы и Факты - <input type="checkbox" name="meForm_aif"
+        /></label>
+        <label>
+          Гомельская правда -
+          <input type="checkbox" name="meForm_gp" />
+        </label>
+        <label>
+          Комсомольская правда -
+          <input type="checkbox" name="meForm_kp" /> </label
+        ><label
+          >Читаю в интернете - <input type="checkbox" name="meForm_i"
+        /></label>
+        <p>Сколько часов в сутки Вы спите?</p>
+        <select name="meForm_slip" id="meForm_slip" size="8" multiple>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7" selected>7</option>
+          <option value="8">8</option>
+          <option value="9">более 8</option>
+        </select>
+        <p>Выберите блюдо для заказа:</p>
+        <p>
+          <input list="menu" name="meForm_menu" />
+          <datalist id="menu">
+            <option value="Салат"></option>
+            <option value="Водка"></option>
+            <option value="Хлеб"></option>
+            <option value="Чай"></option>
+            <option value="Кофе"></option>
+            <option value="Сок"></option>
+            <option value="Харчо"></option>
+          </datalist>
+        </p>
+        <p>Оставьте нам сообщение</p>
+        <textarea
+          name="meForm_text"
+          id="meForm_text"
+          cols="60"
+          rows="25"
+          placeholder="Пишите тут"
+        ></textarea>
+      </form>
+    </div>
+  </body>
+</html>

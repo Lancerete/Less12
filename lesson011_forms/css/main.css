@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #ccc;
+  padding: 25px;
+}
+
+input {
+  padding: 2px;
+  /* margin: 40px; */
+}
+
+.btn {
+  cursor: pointer;
+}
